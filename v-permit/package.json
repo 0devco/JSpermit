@@ -1,0 +1,62 @@
+{
+  "name": "@0devco/Vpermit",
+  "version": "1.5.0",
+  "description": "0devco javascript data collections",
+  "main": "dist/index.js",
+  "scripts": {
+    "pretest": "npm run transpile",
+    "test": "node_modules/.bin/mocha test/tests.js",
+    "transpile": "node  ./node_modules/babel-cli/bin/babel.js src --quiet --out-dir dist",
+    "bundle": "node_modules/.bin/webpack dist/index.js build/crabs.js --output-library crabs",
+    "uglify": "node_modules/.bin/uglifyjs build/crabs.js --compress --mangle --output build/crabs.min.js",
+    "build": "npm run transpile && npm run bundle && npm run uglify",
+    "coverage": "npm run transpile && node_modules/.bin/nyc mocha test/tests.js",
+    "reporter": "node_modules/.bin/nyc report --reporter=html",
+    "prepublishOnly": "npm run build"
+  },
+  "babel": {
+    "presets": [
+      "env"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/0devco/JSpermit/v-permit"
+  },
+  "keywords": [
+    "0devco",
+    "v-permit",
+    "JSpermit",
+    "permissions",
+    "roles",
+    "acl",
+    "vuejs",
+    "vue",
+    "directive"
+  ],
+  "author": {
+    "name": "0devco",
+    "email": "0devco.ceo@gmail.com",
+    "url": "http://0dev.co"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/0devco/JSpermit/issues"
+  },
+  "homepage": "https://github.com/0devco/JSpermit/v-permit",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.25.0",
+    "babel-preset-env": "^1.6.1",
+    "benchmark": "^2.1.0",
+    "chai": "^4.1.2",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb-base": "^11.2.0",
+    "eslint-plugin-import": "^2.5.0",
+    "hoax.js": "^1.0.0",
+    "mocha": "^3.5.2",
+    "nyc": "^11.0.2",
+    "uglify-js": "^3.2.2",
+    "webpack": "^3.10.0"
+  }
+}
