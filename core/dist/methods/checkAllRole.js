@@ -1,7 +1,12 @@
+/* import @0devco/crabs */
 let crabs = require('@0devco/crabs')
 
+/* fetch auth user roles */
 let authUserRole = [1,2,3,4,'admin']
+
+/* main acl process */
 let afterCheck = []
+
 let hasAllRole = (t) => {
   t.forEach(me=>{
     let a = crabs(authUserRole).contains(me)
