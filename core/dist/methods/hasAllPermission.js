@@ -21,5 +21,8 @@ let hasAllPermission = (t) => {
     return false
   }
 }
-console.log(hasAllPermission([2,3,4,'admin']))
-console.log(afterCheck)
+// console.log(hasAllPermission([2,3,4,'admin']))
+// console.log(afterCheck)
+
+
+export default hasAllPermission

@@ -16,10 +16,37 @@ import Vpermit from '@0devco/Vpermit';
 Vue.use(Vpermit);
 ```
 
-# use `v-permit`
+# use `v-permit` with `JSpermit`
 
 ```html
-<div v-permit="true/false">
-  <h1> Done, you can access this </h1>
-</div>
+<template lang="html">
+  <div class="">
+    <div class="" v-permit="hasAllPermission([1,2,3,4])">
+      <h1>done! all permission exist </h1>
+    </div>
+    <div v-permit="hasAnyPermission([1,2,3,4,8,9])">
+      <h1>done! at least one permission exist </h1>
+    </div>
+  </div>
+</template>
+
+<script>
+import {hasAllPermission,hasAnyPermission,hasAllRole,hasAnyRole} from '@0devco/JSpermit';
+export default {
+  data () {
+    return {
+      msg: 'Atom_Vue',
+      hasAllPermission: hasAllPermission,
+      hasAnyPermission: hasAnyPermission,
+      hasAllRole: hasAllRole,
+      hasAnyRole: hasAnyRole
+    }
+  }
+}
+</script>
+
+<style lang="css" scoped >
+
+</style>
+
 ```

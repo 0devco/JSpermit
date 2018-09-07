@@ -21,5 +21,6 @@ let hasAnyPermission = (t) => {
     return false
   }
 }
-console.log(hasAnyPermission(['editor','sp','admin']))
-console.log(afterCheck)
+export default hasAnyPermission
+// console.log(hasAnyPermission(['editor','sp','admin']))
+// console.log(afterCheck)
