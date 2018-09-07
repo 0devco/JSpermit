@@ -1,4 +1,4 @@
-# v-permit directive Vue (JSpermit)
+# `v-permit` directive Vue (JSpermit)
 
 
 # install
