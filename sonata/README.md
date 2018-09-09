@@ -17,7 +17,7 @@ var sonata = require('@odevco/sonata')
 # es6
 import sonata from '@0devco/sonata'
 
-sonata(300)
+sonata(5000)
 ```
 
 # ➣ courtesy
