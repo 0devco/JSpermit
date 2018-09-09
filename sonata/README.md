@@ -15,7 +15,7 @@ yarn add @odevco/sonata
 # core node
 var sonata = require('@odevco/sonata')
 # es6
-import sleep from '@0devco/sonata'
+import sonata from '@0devco/sonata'
 
 sonata(300)
 ```
