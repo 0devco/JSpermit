@@ -17,7 +17,7 @@ var sonata = require('@odevco/sonata')
 # es6
 import sleep from '@0devco/sonata'
 
-sonota(300)
+sonata(300)
 ```
 
 # ➣ courtesy
