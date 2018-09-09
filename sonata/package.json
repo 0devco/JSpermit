@@ -1,7 +1,7 @@
 {
   "name": "@0devco/sonata",
   "version": "1.5.0",
-  "description": "0devco javascript sleep with sonata",
+  "description": "0devco javascript short sleep with sonata",
   "main": "dist/index.js",
   "scripts": {
     "pretest": "npm run transpile",
@@ -21,7 +21,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/0devco/JSpermit/tree/master/sonata"
+    "url": "https://github.com/0devco/JSpermit"
   },
   "keywords": [
     "0devco",
@@ -32,7 +32,7 @@
     "acl",
     "vuejs",
     "vue",
-    "directive"
+    "sleep"
   ],
   "author": {
     "name": "0devco",
